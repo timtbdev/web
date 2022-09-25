@@ -1,26 +1,21 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .gridlockup {
+      background-image: url(/bg_grid_lock_light.jpg);
+      background-size: 122.375rem 100%;
+      height: 52.9375rem;
   }
-  body {
-    color: white;
-    background: black;
+  .dark .gridlockup {
+      background-image: url(/bg_grid_lock_dark.png);
+      background-size: 109.375rem 100%;
+      height: 57.5rem;
+  }
+  .pt-full {
+      padding-top: 100%;
   }
 }
