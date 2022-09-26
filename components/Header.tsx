@@ -7,6 +7,7 @@ import {
   XMarkIcon as XIcon,
 } from "@heroicons/react/24/outline";
 import { Fragment } from "react";
+import Link from "next/link";
 
 const profile = {
   name: "Tim",
@@ -35,7 +36,7 @@ export default function Navigation() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="flex justify-between py-2 md:justify-start">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/" className="inline-flex items-center px-4">
+                <div className="inline-flex items-center px-4">
                   <span className="sr-only">{profile.imageDescription}</span>
                   <img
                     src={profile.imageUrl}
@@ -49,14 +50,7 @@ export default function Navigation() {
                       {profile.job}
                     </div>
                   </div>
-                </a>
-              </div>
-              <div className="my-4 mr-2 md:hidden">
-                {/* Mobile menu button */}
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-slate-700 transition duration-500 ease-in-out hover:text-sky-600 dark:bg-slate-900 dark:text-slate-200 dark:hover:text-sky-400">
-                  <span className="sr-only">Open menu</span>
-                  <MenuIcon className="h-8 w-8" aria-hidden="true" />
-                </Popover.Button>
+                </div>
               </div>
               <div className="hidden items-center justify-end md:inline-flex md:flex-1 lg:w-0">
                 <DarkMode />

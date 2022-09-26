@@ -18,6 +18,7 @@ export default function Footer() {
                 <a
                   href={url}
                   target="_blank"
+                  rel="noreferrer"
                   className="text-base text-slate-700 underline transition duration-500 ease-in-out hover:text-sky-600 dark:text-slate-200 dark:hover:text-sky-400"
                 >
                   {title}

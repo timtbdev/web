@@ -4,10 +4,6 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import cx from "classnames";
-import {
-  ArrowLongLeftIcon as LeftArrowIcon,
-  ArrowLongRightIcon as RightArrowIcon,
-} from "@heroicons/react/24/outline";
 
 interface Props {
   images: string[];

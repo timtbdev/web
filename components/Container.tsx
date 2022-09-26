@@ -39,6 +39,7 @@ const Container: FC<Props> = ({ children, url }) => {
                             className="text-slate-800 hover:border-sky-600 hover:text-sky-600 dark:text-slate-500 dark:hover:border-sky-400 dark:hover:text-sky-400"
                             href={url}
                             target="_blank"
+                            rel="noreferrer"
                           >
                             {url}
                           </a>
